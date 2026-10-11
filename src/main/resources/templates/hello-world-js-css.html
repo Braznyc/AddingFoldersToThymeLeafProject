@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add JS and CSS to ThymeLeaf</title>
+    <link th:href = "@{/css/main.css}" rel="stylesheet">
+    <script type="text/javascript" th:src = "@{/js/actions.js}"></script>
+</head>
+<body>
+
+    <h2>Heading</h2>
+    <p>
+        This is the text on which we will apply <strong>very special</strong> styling.
+    </p>
+
+    <!-- Clicking the button bellow will activate the JS function, which is to show the message: "ThymeLeaf with CSS and JS demo -->
+
+    <button type="button" th:onclick="demo()">"Show Alert"</button>
+
+</body>
+</html>
+
+
